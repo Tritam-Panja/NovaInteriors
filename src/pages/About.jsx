@@ -10,22 +10,22 @@ const About = () => {
     {
       icon: Target,
       title: 'Our Mission',
-      description: 'To create beautiful, functional spaces that inspire and enhance the lives of our clients.'
+      description: 'To design spaces where beauty meets functionality, creating timeless interiors that bring comfort, joy, and inspiration to everyday living.'
     },
     {
       icon: Award,
       title: 'Excellence',
-      description: 'We strive for perfection in every project, ensuring the highest quality in design and execution.'
+      description: 'We are committed to delivering exceptional interior solutions, blending creativity with precision to achieve flawless design and unmatched quality in every space we transform.'
     },
     {
       icon: Users,
       title: 'Client-Focused',
-      description: 'Your vision is our priority. We work closely with you to bring your dream space to life.'
+      description: 'Your style. Your space. Your story. At Nova Interiors, we craft high-end interiors shaped by your preferences and aspirations because your satisfaction is the ultimate measure of our success.'
     },
     {
       icon: Clock,
       title: 'Timely Delivery',
-      description: 'We respect your time and deliver projects on schedule without compromising quality.'
+      description: 'Through streamlined workflows and meticulous planning, we ensure projects are completed on time delivering excellence without delays or compromises.'
     }
   ];
 
@@ -41,11 +41,10 @@ const About = () => {
             className="max-w-4xl mx-auto text-center"
           >
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-              About <span className="text-amber-600 dark:text-amber-400">LuxeInteriors</span>
+              About <span className="text-amber-600 dark:text-amber-400">Nova Interiors</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              With over a decade of experience in interior design, we've transformed hundreds of spaces 
-              into extraordinary environments that reflect our clients' personalities and lifestyles.
+              With over a decade of experience, we have transformed hundreds of spaces into beautiful, functional environments. Each design reflects our clients unique personalities and lifestyles, blending style, comfort, and purpose.
             </p>
           </motion.div>
         </div>
@@ -62,16 +61,13 @@ const About = () => {
             >
               <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">Our Story</h2>
               <p className="text-gray-600 dark:text-gray-300 mb-6">
-                Founded in 2014, LuxeInteriors began as a small studio with a big vision: to create 
-                interior spaces that not only look beautiful but also enhance the way people live and work.
+                Originally established as a small design studio with a clear vision, the practice has evolved into a full-service interior design firm known for creating spaces that balance aesthetic excellence with everyday functionality.
               </p>
               <p className="text-gray-600 dark:text-gray-300 mb-6">
-                Over the years, we've grown into a full-service interior design firm, but our core values 
-                remain the same - creativity, quality, and client satisfaction above all else.
+                Over time, the commitment to core values has remained constant—creativity, quality, and client satisfaction are at the heart of every project.
               </p>
               <p className="text-gray-600 dark:text-gray-300">
-                Today, our team of talented designers continues to push boundaries and create innovative 
-                solutions that transform ordinary spaces into extraordinary experiences.
+               Today, a talented team of designers continues to push boundaries and deliver innovative solutions that transform ordinary spaces into extraordinary experiences.
               </p>
             </motion.div>
             <motion.div
@@ -81,7 +77,7 @@ const About = () => {
               className="relative"
             >
               <img
-                src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg"
+                src="assets/assets/Project 20.jpg"
                 alt="Our Team"
                 className="rounded-2xl shadow-lg"
               />
@@ -103,7 +99,7 @@ const About = () => {
               Our Values
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              These core principles guide everything we do and shape every project we undertake.
+              These guiding principles shape every decision we make and influence the success of each project we undertake.
             </p>
           </motion.div>
 
@@ -141,10 +137,10 @@ const About = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Meet Our Team
+              The Team Behind the Vision
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Our talented team of designers brings creativity, expertise, and passion to every project.
+              Our skilled designers infuse every project with creativity, expertise, and passion.
             </p>
           </motion.div>
 

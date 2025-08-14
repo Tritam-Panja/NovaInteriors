@@ -17,7 +17,7 @@ const Footer = () => {
               transition={{ duration: 0.6 }}
               className="text-2xl font-bold text-amber-400 mb-4"
             >
-              LuxeInteriors
+              Nova Interiors
             </motion.h3>
             <motion.p
               initial={{ opacity: 0 }}

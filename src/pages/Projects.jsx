@@ -14,55 +14,43 @@ const Projects = () => {
       id: 1,
       title: 'Modern Living Room',
       category: 'Residential',
-      location: 'Manhattan, NY',
-      year: '2024',
-      image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg',
+      image: '/assets/assets/Project 8.jpg',
       description: 'Contemporary living space with minimalist design.'
     },
     {
       id: 2,
       title: 'Luxury Bedroom Suite',
       category: 'Residential',
-      location: 'Brooklyn, NY',
-      year: '2024',
-      image: 'https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg',
+      image: '/assets/assets/Project 17.jpg',
       description: 'Elegant bedroom with custom furniture and lighting.'
     },
     {
       id: 3,
       title: 'Corporate Office',
       category: 'Commercial',
-      location: 'Midtown, NY',
-      year: '2023',
-      image: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg',
+      image: '/assets/assets/Project 18.jpg',
       description: 'Modern office space promoting creativity and collaboration.'
     },
     {
       id: 4,
-      title: 'Boutique Hotel Lobby',
+      title: 'Luxury Lounge Living',
       category: 'Hospitality',
-      location: 'SoHo, NY',
-      year: '2023',
-      image: 'https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg',
-      description: 'Luxurious hotel lobby with custom artwork and fixtures.'
+      image: '/assets/assets/Project 21.jpg',
+      description: 'A plush living area with textured walls, layered lighting, and a sophisticated color scheme.'
     },
     {
       id: 5,
-      title: 'Contemporary Kitchen',
+      title: 'Modern Elegance Dining',
       category: 'Residential',
-      location: 'Queens, NY',
-      year: '2023',
-      image: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg',
-      description: 'Open-concept kitchen with premium appliances.'
+      image: '/assets/assets/Project 15.jpg',
+      description: 'A chic dining space with soft pastel tones, statement wall art, and clean lines.'
     },
     {
       id: 6,
-      title: 'Restaurant Interior',
-      category: 'Commercial',
-      location: 'Chelsea, NY',
-      year: '2022',
-      image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg',
-      description: 'Warm and inviting restaurant atmosphere.'
+      title: 'Modern Glossy Wardrobe',
+      category: 'Residential',
+      image: '/assets/assets/Project 1.jpg',
+      description: 'A minimalist wardrobe design with geometric pattern overlays and a natural wood frame.'
     }
   ];
 
@@ -85,7 +73,7 @@ const Projects = () => {
               Our <span className="text-amber-600 dark:text-amber-400">Projects</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              Explore our portfolio of stunning interior design projects that showcase our creativity and expertise.
+              Explore our collection of thoughtfully designed interiors, each showcasing the creativity and expertise behind our work.
             </p>
           </motion.div>
         </div>
@@ -158,11 +146,11 @@ const Projects = () => {
                     </p>
                     <div className="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
                       <div className="flex items-center space-x-1">
-                        <MapPin size={14} />
+                        
                         <span>{project.location}</span>
                       </div>
                       <div className="flex items-center space-x-1">
-                        <Calendar size={14} />
+                        
                         <span>{project.year}</span>
                       </div>
                     </div>

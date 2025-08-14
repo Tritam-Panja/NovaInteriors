@@ -10,7 +10,7 @@ const Projects = () => {
   const filters = ['All', 'Residential', 'Commercial', 'Hospitality'];
 
   const projects = [
-    {
+    { 
       id: 1,
       title: 'Modern Living Room',
       category: 'Residential',
@@ -158,7 +158,7 @@ const Projects = () => {
                     </p>
                     <div className="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
                       <div className="flex items-center space-x-1">
-                        <MapPin size={14} />
+                        
                         <span>{project.location}</span>
                       </div>
                       <div className="flex items-center space-x-1">

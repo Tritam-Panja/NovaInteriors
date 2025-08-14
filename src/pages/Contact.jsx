@@ -8,7 +8,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['+1 (555) 123-4567', '+1 (555) 123-4568'],
+      details: ['+1 (555) 123-4567'],
       description: 'Mon-Fri 9AM-6PM'
     },
     {
@@ -105,15 +105,26 @@ const Contact = () => {
           </motion.div>
           
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-            className="bg-gray-200 dark:bg-gray-700 rounded-2xl h-96 flex items-center justify-center"
-          >
-            <p className="text-gray-600 dark:text-gray-400 text-lg">
-              Interactive Map Component Would Go Here
-            </p>
-          </motion.div>
+  initial={{ opacity: 0, scale: 0.95 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.6 }}
+  className="bg-gray-200 dark:bg-gray-700 rounded-2xl overflow-hidden"
+>
+  {/* Responsive aspect-ratio wrapper (no Tailwind plugin required) */}
+  <div className="relative w-full pb-[75%] sm:pb-[65%] md:pb-[56.25%] lg:h-96 lg:pb-0">
+    {/* Paste your *embed* URL in src below */}
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d963910.8424457923!2d71.63476897812504!3d19.313794599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7afca3bee1753%3A0xebf2b7d3b51245c8!2sNova%20Design%20Studio%20by%20Naveen%20Basniwal!5e0!3m2!1sen!2sin!4v1755197722268!5m2!1sen!2sin" 
+      className="absolute inset-0 w-full h-full"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Location Map"
+    />
+  </div>
+</motion.div>
+
         </div>
       </section>
     </div>

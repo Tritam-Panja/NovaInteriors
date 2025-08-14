@@ -11,7 +11,7 @@ const Testimonials = () => {
       id: 1,
       name: 'Sarah Johnson',
       role: 'Homeowner',
-      content: "LuxeInteriors transformed our home beyond our wildest dreams. The attention to detail and creativity is unmatched.",
+      content: "NovaInteriors transformed our home beyond our wildest dreams. The attention to detail and creativity is unmatched.",
       rating: 5,
       image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg'
     },

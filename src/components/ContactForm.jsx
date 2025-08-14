@@ -56,7 +56,7 @@ const ContactForm = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Call Us</h3>
-                <p className="text-gray-600 dark:text-gray-300">+1 (555) 123-4567</p>
+                <p className="text-gray-600 dark:text-gray-300">+91 76666 50400</p>
               </div>
             </div>
 
@@ -66,7 +66,7 @@ const ContactForm = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Email Us</h3>
-                <p className="text-gray-600 dark:text-gray-300">hello@luxeinteriors.com</p>
+                <p className="text-gray-600 dark:text-gray-300">Naveendesign167@gmail.com</p>
               </div>
             </div>
 
@@ -77,8 +77,7 @@ const ContactForm = () => {
               <div>
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Visit Us</h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  123 Design Street<br />
-                  New York, NY 10001
+                  Shop number 5, Sheth Supreme K1, near Jain Mandir, Bhayandar, Jesal Park, Bhayandar East, Thane, Mira Bhayandar, Maharashtra 4011051
                 </p>
               </div>
             </div>

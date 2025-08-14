@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Play } from 'lucide-react';
+import { Link } from  "react-router-dom";
 
 const Hero = () => {
   return (
@@ -40,23 +41,30 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-full flex items-center space-x-2 transition-all duration-300"
-            >
-              <span>Get Free Consultation</span>
-              <ArrowRight size={20} />
-            </motion.button>
+            
+          <Link to="/contact">
+  <motion.button
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-full flex items-center space-x-2 transition-all duration-300"
+  >
+    <span>Get Free Consultation</span>
+    <ArrowRight size={20} />
+  </motion.button>
+</Link>
 
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="border-2 border-amber-600 text-amber-600 dark:text-amber-400 px-8 py-4 rounded-full flex items-center space-x-2 hover:bg-amber-600 hover:text-white transition-all duration-300"
-            >
-              <Play size={20} />
-              <span>View Our Work</span>
-            </motion.button>
+<Link to="/projects">
+  <motion.button
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="border-2 border-amber-600 text-amber-600 dark:text-amber-400 px-8 py-4 rounded-full flex items-center space-x-2 hover:bg-amber-600 hover:text-white transition-all duration-300"
+  >
+    <Play size={20} />
+    <span>View Our Work</span>
+  </motion.button>
+</Link>
+
+
           </motion.div>
         </div>
       </div>

@@ -28,12 +28,12 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/assets" className="flex items-center space-x-2">
             <motion.div
               whileHover={{ scale: 1.05 }}
               className="text-2xl font-bold text-amber-600 dark:text-amber-400"
             >
-              Nova Interiors
+              NovaInteriors
             </motion.div>
           </Link>
 

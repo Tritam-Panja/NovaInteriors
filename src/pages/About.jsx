@@ -64,7 +64,7 @@ const About = () => {
                 Originally established as a small design studio with a clear vision, the practice has evolved into a full-service interior design firm known for creating spaces that balance aesthetic excellence with everyday functionality.
               </p>
               <p className="text-gray-600 dark:text-gray-300 mb-6">
-                Over time, the commitment to core values has remained constant—creativity, quality, and client satisfaction are at the heart of every project.
+                Over time, the commitment to core values has remained constant creativity, quality, and client satisfaction are at the heart of every project.
               </p>
               <p className="text-gray-600 dark:text-gray-300">
                Today, a talented team of designers continues to push boundaries and deliver innovative solutions that transform ordinary spaces into extraordinary experiences.

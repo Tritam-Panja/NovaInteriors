@@ -8,19 +8,19 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['+1 (555) 123-4567'],
+      details: ['+91 76666 50400'],
       description: 'Mon-Fri 9AM-6PM'
     },
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['hello@luxeinteriors.com', 'info@luxeinteriors.com'],
+      details: ['Naveendesign167@gmail.com'],
       description: 'We reply within 24 hours'
     },
     {
       icon: MapPin,
       title: 'Visit Our Studio',
-      details: ['123 Design Street', 'New York, NY 10001'],
+      details: ['Jesal Park', 'Bhayandar East, Thane'],
       description: 'By appointment only'
     },
     {
@@ -100,7 +100,7 @@ const Contact = () => {
               Find Our Studio
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              Located in the heart of New York's design district
+              Located near Bhyander Railway Station, East
             </p>
           </motion.div>
           

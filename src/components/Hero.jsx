@@ -7,8 +7,17 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-beige-50 to-white dark:from-gray-900 dark:to-gray-800">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg')] bg-cover bg-center"></div>
+      <div className="absolute inset-0 opacity-80">
+        <video
+  className="absolute inset-0 w-full h-full object-cover"
+  autoPlay
+  loop
+  muted
+  playsInline
+>
+  <source src="/assets/Background video.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -29,7 +38,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto"
+            className="text-xl text-black-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto"
           >
             We create stunning interior designs that reflect your personality and lifestyle. 
             From concept to completion, we bring your vision to life.
@@ -57,7 +66,7 @@ const Hero = () => {
   <motion.button
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
-    className="border-2 border-amber-600 text-amber-600 dark:text-amber-400 px-8 py-4 rounded-full flex items-center space-x-2 hover:bg-amber-600 hover:text-white transition-all duration-300"
+    className="border-2 border-amber-600 text-white dark:text-white px-8 py-4 rounded-full flex items-center space-x-2 hover:bg-amber-600 hover:text-white transition-all duration-300"
   >
     <Play size={20} />
     <span>View Our Work</span>

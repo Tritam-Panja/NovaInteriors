@@ -14,42 +14,42 @@ const Projects = () => {
       id: 1,
       title: 'Modern Living Room',
       category: 'Residential',
-      image: '/assets/assets/Project 8.jpg',
+      image: '/assets/Project 8.jpg',
       description: 'Contemporary living space with minimalist design.'
     },
     {
       id: 2,
       title: 'Luxury Bedroom Suite',
       category: 'Residential',
-      image: '/assets/assets/Project 17.jpg',
+      image: '/assets/Project 17.jpg',
       description: 'Elegant bedroom with custom furniture and lighting.'
     },
     {
       id: 3,
       title: 'Corporate Office',
       category: 'Commercial',
-      image: '/assets/assets/Project 18.jpg',
+      image: '/assets/Project 18.jpg',
       description: 'Modern office space promoting creativity and collaboration.'
     },
     {
       id: 4,
       title: 'Luxury Lounge Living',
       category: 'Hospitality',
-      image: '/assets/assets/Project 21.jpg',
+      image: '/assets/Project 21.jpg',
       description: 'A plush living area with textured walls, layered lighting, and a sophisticated color scheme.'
     },
     {
       id: 5,
       title: 'Modern Elegance Dining',
       category: 'Residential',
-      image: '/assets/assets/Project 15.jpg',
+      image: '/assets/Project 15.jpg',
       description: 'A chic dining space with soft pastel tones, statement wall art, and clean lines.'
     },
     {
       id: 6,
       title: 'Modern Glossy Wardrobe',
       category: 'Residential',
-      image: '/assets/assets/Project 1.jpg',
+      image: '/assets/Project 1.jpg',
       description: 'A minimalist wardrobe design with geometric pattern overlays and a natural wood frame.'
     }
   ];

@@ -77,7 +77,7 @@ const About = () => {
               className="relative"
             >
               <img
-                src="assets/assets/Project 20.jpg"
+                src="assets/Project 20.jpg"
                 alt="Our Team"
                 className="rounded-2xl shadow-lg"
               />

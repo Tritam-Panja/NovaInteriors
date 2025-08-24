@@ -67,7 +67,7 @@ const About = () => {
                 Over time, the commitment to core values has remained constant creativity, quality, and client satisfaction are at the heart of every project.
               </p>
               <p className="text-gray-600 dark:text-gray-300">
-               Today, a talented team of designers continues to push boundaries and deliver innovative solutions that transform ordinary spaces into extraordinary experiences.
+                Today, a talented team of designers continues to push boundaries and deliver innovative solutions that transform ordinary spaces into extraordinary experiences.
               </p>
             </motion.div>
             <motion.div
@@ -128,27 +128,46 @@ const About = () => {
       </section>
 
       {/* Our Services */}
-      <section className="py-12 bg-white dark:bg-gray-900">
-        <div className="container mx-auto px-6 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="mb-12"
-          >
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
-              Our Services 
-            </h2>
-          </motion.div>
+      <section className="py-16 bg-white dark:bg-gray-900">
+        <div className="container mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Image */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="flex justify-center"
+            >
+              <img
+                src="/assets/our services.png.jpeg"
+                alt="Our Services"
+                className="rounded-2xl shadow-lg w-full"
+              />
+            </motion.div>
 
-          <motion.img
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            src="/assets/our services.png.jpeg" 
-            alt="Our Services"
-            className="mx-auto rounded-2xl shadow-lg w-3/4 md:w-1/2"
-          />
+            {/* Right: Content */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+                Our Services
+              </h2>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                At <strong>Nova Interiors</strong>, we believe that great services are built on
+                innovation, trust, and customer satisfaction. Our offerings are designed to help you
+                grow, perform better, and achieve long-term success. With a team of dedicated
+                professionals and a client-first approach, we deliver solutions that are both impactful
+                and sustainable.
+              </p>
+              <p className="text-gray-600 dark:text-gray-300">
+                From strategy and design to execution and support, our services cover every stage of
+                your journey. We combine technology, creativity, and expertise to provide results that
+                not only meet but exceed expectations.
+              </p>
+            </motion.div>
+          </div>
         </div>
       </section>
     </div>

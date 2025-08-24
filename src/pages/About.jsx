@@ -127,62 +127,28 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="py-20 bg-white dark:bg-gray-900">
-        <div className="container mx-auto px-6">
+      {/* Our Services */}
+      <section className="py-12 bg-white dark:bg-gray-900">
+        <div className="container mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="mb-12"
           >
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              The Team Behind the Vision
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+              Our Services 
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Our skilled designers infuse every project with creativity, expertise, and passion.
-            </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: 'Emma Rodriguez',
-                role: 'Lead Interior Designer',
-                image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg'
-              },
-              {
-                name: 'James Wilson',
-                role: 'Senior Designer',
-                image: 'https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg'
-              },
-              {
-                name: 'Sophia Chen',
-                role: 'Color Specialist',
-                image: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg'
-              }
-            ].map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="text-center"
-              >
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-48 h-48 rounded-full object-cover mx-auto mb-4"
-                />
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                  {member.name}
-                </h3>
-                <p className="text-amber-600 dark:text-amber-400">
-                  {member.role}
-                </p>
-              </motion.div>
-            ))}
-          </div>
+          <motion.img
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            src="/assets/our services.png.jpeg" 
+            alt="Our Services"
+            className="mx-auto rounded-2xl shadow-lg w-3/4 md:w-1/2"
+          />
         </div>
       </section>
     </div>

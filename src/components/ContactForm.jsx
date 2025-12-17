@@ -7,7 +7,8 @@ const ContactForm = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   // Paste your Web3Forms access key here
-  const WEB3FORMS_KEY = "YOUR_ACCESS_KEY_HERE";
+const GOOGLE_SCRIPT_URL = "PASTE_YOUR_WEB_APP_URL_HERE";
+
 
   const [formData, setFormData] = useState({
     name: "",
@@ -32,7 +33,7 @@ const ContactForm = () => {
     setStatusMessage("");
 
     const data = {
-      access_key: WEB3FORMS_KEY,
+      access_key: GOOGLE_SCRIPT_URL,
       ...formData
     };
 

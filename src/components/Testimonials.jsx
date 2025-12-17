@@ -9,27 +9,52 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Sarah Johnson',
-      role: 'Homeowner',
-      content: "NovaInteriors transformed our home beyond our wildest dreams. The attention to detail and creativity is unmatched.",
+      name: ' Akansha Baliga',
+      role: ' 3 BHK, Pavai',
+      content: " Our designer took us through our options in extraordinary detail and wasextremely helpful in setting up our home the way we wanted",
       rating: 5,
-      image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg'
+      
     },
     {
       id: 2,
-      name: 'Michael Chen',
-      role: 'Business Owner',
-      content: "Professional, creative, and delivered exactly what we envisioned. Our office space is now a place we love to work in.",
+      name: 'Rathod Shekhawat',
+      role: ' 2 BHK, Kandiwali East',
+      content: "Our experience with Nova was nice thanks to the project managers. They worked so much on this project, and finished it on time.",
       rating: 5,
-      image: 'https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg'
+      
+    },
+     {
+      id: 3,
+      name: 'Laxmi Prajapt',
+      role: ' 2 BHK ',
+      content: "I had a fantastic experience with Nova Design Studio From Start To Finish,Mr. Naveen and their Team Demonstrated Exceptional Professionalism and Creativity, They listened carefully to my ideas and transformed them into a beautifully designed space that exceeded my expectations.",
+      rating: 5,
+      
+    },
+     {
+      id: 4,
+      name: 'Pawan Kumar',
+      role: ' 2 BHK, borivali',
+      content: "We are absolutely thrilled with the stunning renovation of our home! The interior designer exceeded our expectations with their creativity, professionalism, and attention to detail. Five stars isn't enough - they're truly the best! ",
+      rating: 5,
+      
+    },
+
+     {
+      id: 2,
+      name: 'Amit Gupta',
+      role: ' 2 BHK , Malad West',
+      content: "Superb team of highly skilled professionals, they turned our dream home into reality. Nova Design Studio did a amazing job of recreating my home from scratch. They are very cooperative and have solutions for all your home designing problems. I will definately recomend Naveen and his team to everyone.👍🏻",
+      rating: 5,
+      
     },
     {
       id: 3,
-      name: 'Emily Davis',
-      role: 'Homeowner',
-      content: "The team's expertise in color and space planning helped us create a home that truly reflects our family's personality.",
+      name: 'Vikas Gupta',
+      role: ' 3 BHK, Bhayandar West',
+      content: "A place where I can find peace. A home That’s exactly what Nova has helped me with. I’m very happy with the outcome.",
       rating: 5,
-      image: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg'
+     
     }
   ];
 
@@ -72,11 +97,7 @@ const Testimonials = () => {
               </p>
 
               <div className="flex items-center">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover mr-4"
-                />
+               
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white">
                     {testimonial.name}

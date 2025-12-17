@@ -18,8 +18,8 @@ const Footer = () => {
               transition={{ duration: 0.6 }}
               className="text-2xl font-bold text-amber-400 mb-4"
             >
-              NovaInteriors
-            </motion.h3>
+              NovaDesignStudio
+                          </motion.h3>
             <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -30,7 +30,7 @@ const Footer = () => {
             </motion.p>
             <div className="flex space-x-4">
   {[
-    { Icon: Facebook, url: "https://facebook.com/yourpage" },
+    { Icon: Facebook, url: "https://www.facebook.com/novadesignstudiobynaveenbasniwal/" },
     { Icon: Instagram, url: "https://www.instagram.com/nova.design_studio/?igsh=MTQwNGYzcDk2NXplcg%3D%3D&utm_source=qr#" },
     { Icon: Twitter, url: "https://twitter.com/yourprofile" },
     { Icon: Linkedin, url: "https://linkedin.com/in/yourprofile" },
@@ -107,9 +107,13 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="space-y-3"
             >
-              <div className="flex items-center space-x-3">
-                <Phone size={16} className="text-amber-400" />
+              <div className="flex items-start space-x-3">
+                  <div className="flex flex-col space-y-1">
+                <Phone size={14} className="text-amber-400" />
                 <span className="text-gray-300">+91 76666 50400</span>
+                <span className="text-gray-300">+91 79773 85213</span>
+                <span className="text-gray-300">+91 99305 27773</span>
+                </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={16} className="text-amber-400" />
@@ -132,7 +136,7 @@ const Footer = () => {
           className="border-t border-gray-800 mt-12 pt-8 text-center"
         >
           <p className="text-gray-400">
-            © {currentYear} NovaInteriors. All rights reserved.
+            © {currentYear} NovaDesignStudio. All rights reserved.
           </p>
         </motion.div>
       </div>

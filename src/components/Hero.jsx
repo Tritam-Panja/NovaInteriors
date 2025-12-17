@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-beige-50 to-white dark:from-gray-900 dark:to-gray-800">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-80">
+      <div className="absolute inset-0 opacity-60">
         <video
   className="absolute inset-0 w-full h-full object-cover"
   autoPlay

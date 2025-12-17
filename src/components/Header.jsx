@@ -33,7 +33,7 @@ const Header = () => {
               whileHover={{ scale: 1.05 }}
               className="text-2xl font-bold text-amber-600 dark:text-amber-400"
             >
-              NovaInteriors
+              NovaDesignStudio
             </motion.div>
           </Link>
 

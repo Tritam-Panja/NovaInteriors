@@ -20,7 +20,7 @@ const FeaturedProjects = () => {
       id: 2,
       title: 'Luxury Bedroom Suite',
       category: 'Residential',
-      image: 'https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg',
+      image: 'https://media.istockphoto.com/id/1213695547/photo/3d-rendering-of-an-elegant-bedroom.jpg?s=612x612&w=0&k=20&c=yxOoaz2IAd9zvtlXeS-Th-AiXhaCtMIxOONfGbtGeG8=',
       year: '2024'
     },
     {

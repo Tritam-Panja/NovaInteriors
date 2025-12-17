@@ -10,59 +10,47 @@ const Projects = () => {
   const filters = ['All', 'Residential', 'Commercial', 'Hospitality'];
 
   const projects = [
-    { 
+    {
       id: 1,
       title: 'Modern Living Room',
       category: 'Residential',
-      location: 'Manhattan, NY',
-      year: '2024',
-      image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg',
+      image: '/assets/Project 19.jpg',
       description: 'Contemporary living space with minimalist design.'
     },
     {
       id: 2,
       title: 'Luxury Bedroom Suite',
       category: 'Residential',
-      location: 'Brooklyn, NY',
-      year: '2024',
-      image: 'https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg',
+      image: '/assets/Project 17.jpg',
       description: 'Elegant bedroom with custom furniture and lighting.'
     },
     {
       id: 3,
       title: 'Corporate Office',
       category: 'Commercial',
-      location: 'Midtown, NY',
-      year: '2023',
-      image: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg',
+      image: '/assets/corprate office.jpg',
       description: 'Modern office space promoting creativity and collaboration.'
     },
     {
       id: 4,
-      title: 'Boutique Hotel Lobby',
-      category: 'Hospitality',
-      location: 'SoHo, NY',
-      year: '2023',
-      image: 'https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg',
-      description: 'Luxurious hotel lobby with custom artwork and fixtures.'
+      title: 'Luxury Lounge Living',
+      category: 'Residential',
+      image: '/assets/Project 21.jpg',
+      description: 'A plush living area with textured walls, layered lighting, and a sophisticated color scheme.'
     },
     {
       id: 5,
-      title: 'Contemporary Kitchen',
+      title: 'Modern Elegance Dining',
       category: 'Residential',
-      location: 'Queens, NY',
-      year: '2023',
-      image: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg',
-      description: 'Open-concept kitchen with premium appliances.'
+      image: '/assets/Project 15.jpg',
+      description: 'A chic dining space with soft pastel tones, statement wall art, and clean lines.'
     },
     {
       id: 6,
-      title: 'Restaurant Interior',
-      category: 'Commercial',
-      location: 'Chelsea, NY',
-      year: '2022',
-      image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg',
-      description: 'Warm and inviting restaurant atmosphere.'
+      title: 'Modern Glossy Wardrobe',
+      category: 'Residential',
+      image: '/assets/Project 1.jpg',
+      description: 'A minimalist wardrobe design with geometric pattern overlays and a natural wood frame.'
     }
   ];
 
@@ -85,40 +73,14 @@ const Projects = () => {
               Our <span className="text-amber-600 dark:text-amber-400">Projects</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              Explore our portfolio of stunning interior design projects that showcase our creativity and expertise.
+              Explore our collection of thoughtfully designed interiors, each showcasing the creativity and expertise behind our work.
             </p>
           </motion.div>
         </div>
       </section>
 
       {/* Filter Section */}
-      <section className="py-12 bg-white dark:bg-gray-900">
-        <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="flex flex-wrap justify-center items-center gap-4 mb-12"
-          >
-            <Filter className="text-amber-600 dark:text-amber-400" size={20} />
-            {filters.map((filter) => (
-              <motion.button
-                key={filter}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => setActiveFilter(filter)}
-                className={`px-6 py-3 rounded-full transition-all duration-300 ${
-                  activeFilter === filter
-                    ? 'bg-amber-600 text-white'
-                    : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-amber-100 dark:hover:bg-amber-900/30'
-                }`}
-              >
-                {filter}
-              </motion.button>
-            ))}
-          </motion.div>
-        </div>
-      </section>
+    
 
       {/* Projects Grid */}
       <section ref={ref} className="py-12 bg-beige-50 dark:bg-gray-800">
@@ -162,7 +124,7 @@ const Projects = () => {
                         <span>{project.location}</span>
                       </div>
                       <div className="flex items-center space-x-1">
-                        <Calendar size={14} />
+                        
                         <span>{project.year}</span>
                       </div>
                     </div>

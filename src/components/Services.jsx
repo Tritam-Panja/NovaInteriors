@@ -17,7 +17,7 @@ const Services = () => {
       icon: Palette,
       title: 'Color Consultation',
       description: 'Expert color schemes that create harmony and reflect your personality.',
-      image: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg'
+      image: 'https://media.istockphoto.com/id/1291484089/photo/close-up-of-two-women-choosing-samples-of-wall-paint-interior-designer-consulting-a-client.jpg?s=612x612&w=0&k=20&c=f4MP6v7nNy2rwE95PmFfGdKnJjo1xYddj7hDJAlXLOc='
     },
     {
       icon: Lightbulb,

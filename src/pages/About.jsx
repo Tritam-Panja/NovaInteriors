@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -10,22 +11,22 @@ const About = () => {
     {
       icon: Target,
       title: 'Our Mission',
-      description: 'To create beautiful, functional spaces that inspire and enhance the lives of our clients.'
+      description: 'To design spaces where beauty meets functionality, creating timeless interiors that bring comfort, joy, and inspiration to everyday living.'
     },
     {
       icon: Award,
       title: 'Excellence',
-      description: 'We strive for perfection in every project, ensuring the highest quality in design and execution.'
+      description: 'We are committed to delivering exceptional interior solutions, blending creativity with precision to achieve flawless design and unmatched quality in every space we transform.'
     },
     {
       icon: Users,
       title: 'Client-Focused',
-      description: 'Your vision is our priority. We work closely with you to bring your dream space to life.'
+      description: 'Your style. Your space. Your story. At Nova Interiors, we craft high-end interiors shaped by your preferences and aspirations because your satisfaction is the ultimate measure of our success.'
     },
     {
       icon: Clock,
       title: 'Timely Delivery',
-      description: 'We respect your time and deliver projects on schedule without compromising quality.'
+      description: 'Through streamlined workflows and meticulous planning, we ensure projects are completed on time delivering excellence without delays or compromises.'
     }
   ];
 
@@ -41,11 +42,10 @@ const About = () => {
             className="max-w-4xl mx-auto text-center"
           >
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-              About <span className="text-amber-600 dark:text-amber-400">LuxeInteriors</span>
+              About <span className="text-amber-600 dark:text-amber-400">NovaDesignStudio</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              With over a decade of experience in interior design, we've transformed hundreds of spaces 
-              into extraordinary environments that reflect our clients' personalities and lifestyles.
+              With over a decade of experience, we have transformed hundreds of spaces into beautiful, functional environments. Each design reflects our clients unique personalities and lifestyles, blending style, comfort, and purpose.
             </p>
           </motion.div>
         </div>
@@ -62,16 +62,13 @@ const About = () => {
             >
               <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">Our Story</h2>
               <p className="text-gray-600 dark:text-gray-300 mb-6">
-                Founded in 2014, LuxeInteriors began as a small studio with a big vision: to create 
-                interior spaces that not only look beautiful but also enhance the way people live and work.
+                Originally established as a small design studio with a clear vision, the practice has evolved into a full-service interior design firm known for creating spaces that balance aesthetic excellence with everyday functionality.
               </p>
               <p className="text-gray-600 dark:text-gray-300 mb-6">
-                Over the years, we've grown into a full-service interior design firm, but our core values 
-                remain the same - creativity, quality, and client satisfaction above all else.
+                Over time, the commitment to core values has remained constant creativity, quality, and client satisfaction are at the heart of every project.
               </p>
               <p className="text-gray-600 dark:text-gray-300">
-                Today, our team of talented designers continues to push boundaries and create innovative 
-                solutions that transform ordinary spaces into extraordinary experiences.
+                Today, a talented team of designers continues to push boundaries and deliver innovative solutions that transform ordinary spaces into extraordinary experiences.
               </p>
             </motion.div>
             <motion.div
@@ -81,7 +78,7 @@ const About = () => {
               className="relative"
             >
               <img
-                src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg"
+                src="assets/Project 20.jpg"
                 alt="Our Team"
                 className="rounded-2xl shadow-lg"
               />
@@ -103,7 +100,7 @@ const About = () => {
               Our Values
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              These core principles guide everything we do and shape every project we undertake.
+              These guiding principles shape every decision we make and influence the success of each project we undertake.
             </p>
           </motion.div>
 
@@ -131,61 +128,46 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="py-20 bg-white dark:bg-gray-900">
+      {/* Our Services */}
+      <section className="py-16 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Meet Our Team
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Our talented team of designers brings creativity, expertise, and passion to every project.
-            </p>
-          </motion.div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Image */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="flex justify-center"
+            >
+              <img
+                src="/assets/our services.jpg"
+                alt="Our Services"
+                className="rounded-2xl shadow-lg w-full"
+              />
+            </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: 'Emma Rodriguez',
-                role: 'Lead Interior Designer',
-                image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg'
-              },
-              {
-                name: 'James Wilson',
-                role: 'Senior Designer',
-                image: 'https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg'
-              },
-              {
-                name: 'Sophia Chen',
-                role: 'Color Specialist',
-                image: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg'
-              }
-            ].map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="text-center"
-              >
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-48 h-48 rounded-full object-cover mx-auto mb-4"
-                />
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                  {member.name}
-                </h3>
-                <p className="text-amber-600 dark:text-amber-400">
-                  {member.role}
-                </p>
-              </motion.div>
-            ))}
+            {/* Right: Content */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+                Our Services
+              </h2>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                At <strong>Nova Interiors</strong>, we believe that great services are built on
+                innovation, trust, and customer satisfaction. Our offerings are designed to help you
+                grow, perform better, and achieve long-term success. With a team of dedicated
+                professionals and a client-first approach, we deliver solutions that are both impactful
+                and sustainable.
+              </p>
+              <p className="text-gray-600 dark:text-gray-300">
+                From strategy and design to execution and support, our services cover every stage of
+                your journey. We combine technology, creativity, and expertise to provide results that
+                not only meet but exceed expectations.
+              </p>
+            </motion.div>
           </div>
         </div>
       </section>
